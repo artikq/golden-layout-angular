@@ -12,7 +12,7 @@ import {
   Injector,
   ReflectiveInjector,
   ViewChild
-} from "@angular/core";
+} from '@angular/core';
 import * as GoldenLayout from 'golden-layout';
 import { GlOnResize, GlOnShow, GlOnHide, GlOnTab } from './hooks';
 import {
@@ -84,7 +84,6 @@ export class GoldenLayoutComponent implements OnInit, ComponentInitCallbackFacto
 
   private _createLayout(layout: any): void {
     this.goldenLayout = new GoldenLayout(layout, $(this.el.nativeElement));
-
     // Destory child angular components on golden-layout container destruction.
     this.goldenLayout.eventHub.on('itemDestroyed', (item: any) => {
       const container = item.container;
