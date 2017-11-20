@@ -22,7 +22,7 @@ import * as GoldenLayout from 'golden-layout';
 export class SystemsListComponent
   implements GlOnResize, GlOnHide, GlOnShow, GlOnTab {
   constructor(
-    @Inject(GoldenLayoutComponentState) private state: any,
+    @Inject(GoldenLayoutComponentState) public state: any,
     @Inject(GoldenLayoutContainer) private container: GoldenLayout.Container
   ) {}
 
